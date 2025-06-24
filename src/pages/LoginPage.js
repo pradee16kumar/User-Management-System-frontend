@@ -88,7 +88,7 @@ const LoginPage = () => {
               <CaptchaBox onAnswer={setCaptcha} className={styles.formControl} />
             </div>
 
-            <div className={`d-flex justify-content-between align-items-center ${styles.rememberMeSection}`}>
+            <div className={styles.rememberMeSection}>
               <div className="form-check">
                 <input
                   className="form-check-input"
@@ -103,9 +103,10 @@ const LoginPage = () => {
               </div>
             </div>
 
-            <button type="submit" className={`btn w-100 mt-2 ${styles.loginButton}`}>
-              LOGIN
-            </button>
+            <button type="submit" className={styles.loginButton}>
+  LOGIN
+</button>
+
           </form>
         </div>
       </div>

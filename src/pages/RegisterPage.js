@@ -94,7 +94,7 @@ const RegisterPage = () => {
               <CaptchaBox onAnswer={setCaptcha} className={styles.formControl} />
             </div>
 
-            <button type="submit" className={`btn w-100 mt-2 ${styles.loginButton}`}>
+            <button type="submit" className={styles.loginButton}>
               REGISTER
             </button>
           </form>
