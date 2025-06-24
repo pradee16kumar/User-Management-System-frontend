@@ -1,0 +1,151 @@
+/* src/styles/login.module.css */
+
+.loginPageContainer {
+    background-color: #f8f1f8; /* Light background as per image */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginCard {
+    width: 800px; /* Fixed width for the container */
+    min-height: 450px;
+    border-radius: 20px; /* Rounded corners as in the image */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    overflow: hidden; /* Important for rounded corners with children */
+}
+
+.leftPanel {
+    width: 40%; /* Adjusted width slightly to match image better */
+    background-color: #8e2d8a;
+    color: white; /* Ensure all text inside is white */
+    padding: 3rem 2rem; /* More padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center align text */
+    text-align: center; /* Center align text */
+    border-radius: 20px 0 0 20px; /* Rounded left corners only */
+}
+
+.leftPanel h2 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.leftPanel p {
+    font-size: 0.95rem; /* Consistent paragraph font size */
+    line-height: 1.4;
+    max-width: 250px; /* Constrain text width for better readability */
+}
+
+.registerButton {
+    /* Styles for white background and white border, purple text - now used for left panel buttons */
+    background-color: white;
+    border-color: white;
+    color: #8e2d8a; /* Ensures purple text */
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border-radius: 30px; /* Pill-shaped button */
+    transition: all 0.3s ease;
+}
+
+.registerButton:hover {
+    background-color: #f0f0f0; /* Slightly darker white on hover */
+    color: #6a216a; /* Darker purple text on hover */
+    border-color: #f0f0f0;
+}
+
+.rightPanel {
+    width: 60%; /* Adjusted width */
+    background-color: #fff;
+    padding: 3rem 2.5rem; /* More padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signInTitle {
+    font-weight: 700;
+    margin-bottom: 2.5rem; /* Increased margin for spacing */
+    font-size: 2.2rem; /* Larger font size for title */
+    color: #8e2d8a; /* Changed to purple color */
+    text-align: left; /* Aligned to left as in image */
+}
+
+.formControl {
+    border-radius: 8px; /* Slightly rounded inputs */
+    padding: 0.5rem 1rem; /* Reduced padding */
+    border: 1px solid #e0e0e0;
+    font-size: 0.85rem; /* Slightly smaller font size */
+    height: auto; /* Ensure height adjusts to padding */
+    min-height: 36px; /* Set a minimum height */
+}
+
+.formControl::placeholder {
+    color: #a0a0a0;
+}
+
+.formControl:focus {
+    border-color: #8e2d8a;
+    box-shadow: 0 0 0 0.2rem rgba(142, 45, 138, 0.25);
+}
+
+.rememberMeSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem; /* Slightly reduced margin */
+    font-size: 0.85rem; /* Smaller font size for remember me */
+}
+
+.rememberMeLabel {
+    color: #555;
+    margin-left: 0.5rem;
+}
+
+.loginButton {
+    /* Styles for solid color purple button */
+    background-color: #8e2d8a;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem; /* Slightly reduced padding */
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem; /* Maintain readable font size for button */
+}
+
+.loginButton:hover {
+    background-color: #6a216a; /* Darker purple on hover */
+}
+
+/* Ensure links in the right panel (e.g., Forgot Password) are purple */
+.rightPanel a {
+    color: #8e2d8a; /* Consistent purple for links in the white panel */
+    text-decoration: none; /* Remove underline by default */
+    transition: color 0.3s ease;
+}
+
+.rightPanel a:hover {
+    color: #6a216a; /* Darker purple on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Hide Bootstrap's default focus outline for a cleaner look */
+.btn:focus, .form-control:focus {
+    box-shadow: none !important;
+}
+
+.captchaBoxContainer {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    height: auto;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
